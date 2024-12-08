@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Our Restaurant</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f0f0f0, #e1e1e1);
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background: #2980b9;
+            color: #ecf0f1;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #3498db;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 25px;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .contact, .location, .hours, .social-media, .rate-us {
+            padding: 40px;
+            text-align: center;
+            background: #fff;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact h2, .location h2, .hours h2, .social-media h2, .rate-us h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #2980b9;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            transition: border-color 0.3s;
+        }
+
+        #contact-form input:focus,
+        #contact-form textarea:focus {
+            border-color: #2980b9;
+            outline: none;
+        }
+
+        #contact-form button {
+            padding: 10px 20px;
+            background: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #contact-form button:hover {
+            background: #3498db;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            #contact-form input,
+            #contact-form textarea {
+                width: 90%;
+            }
+
+            .contact h2, .location h2, .hours h2, .social-media h2, .rate-us h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>We would love to hear from you! Please fill out the form below:</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="location">
+            <h2>Our Location</h2>
+            <p>123 Culinary St, Food City, FC 12345</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345091305!2d144.953735315319!3d-37.816279979751484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0c1d63%3A0x6c8bcf51c83ed14b!2sCulinary%20St%2C%20Food%20City%2C%20FC%2012345!5e0!3m2!1sen!2sau!4v1630210725034!5m2!1sen!2sau" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </section>
+
+        <section class="hours">
+            <h2>Opening Hours</h2>
+            <p><strong>Monday - Friday:</strong> 9 AM - 10 PM</p>
+            <p><strong>Saturday - Sunday:</strong> 10 AM - 11 PM</p>
+        </section>
+
+        <section class="social-media">
+            <h2>Follow Us on Social Media</h2>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://wa.me/yourphonenumber" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+                <a href="https://instagram.com/yourusername" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </section>
+
+        <section class="rate-us">
+            <h2>Rate Us</h2>
+            <p>Your feedback is valuable! Please take a moment to rate us on our website or your favorite review platform.</p>
+            <button>Rate Now</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+        <p>Phone: (123) 456-7890 | Email: info@ourrestaurant.com</p>
+    </footer>
+</body>
+</html>

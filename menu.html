@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu - Our Restaurant</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #f0f0f0, #e1e1e1);
+        margin: 0;
+        color: #333;
+    }
+
+    header {
+        background: #2c3e50;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 1s ease-in;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background: #34495e;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    nav li {
+        margin: 0 20px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+        color: #ffcc00;
+        transform: scale(1.1);
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .menu {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .menu h2 {
+        margin-bottom: 20px;
+        font-size: 2.5em;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .menu-item {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+        text-align: center;
+    }
+
+    .menu-item img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-item:hover {
+        transform: scale(1.05);
+    }
+
+    .order-button {
+        padding: 10px 15px;
+        background: #2c3e50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .order-button:hover {
+        background: #34495e;
+    }
+
+    .customer-reviews {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .review-item {
+        background: #fff;
+        border-radius: 8px;
+        margin: 15px auto;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+    }
+
+    .reservation {
+        background: #8aabaf;
+        padding: 40px 20px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(23, 175, 235, 0.2);
+        margin: 20px 0;
+    }
+
+    .reservation-card {
+        background: #dbb9b9;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        width: 100%;
+    }
+
+    .reservation label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+
+    .reservation input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #70324f;
+        border-radius: 5px;
+    }
+
+    .reservation button {
+        padding: 10px 15px;
+        background: #0d0d0e;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .reservation button:hover {
+        background: #34495e;
+    }
+
+    .specials {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .special-item {
+        background: #fff;
+        border-radius: 8px;
+        margin: 15px auto;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        background: #2c3e50;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h2>Our Delicious Dishes</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="dhokla.jpg" alt="Spaghetti Carbonara">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Price: $12</p>
+                    <p>Rating: ★★★★☆</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="india-food-paratha-1120x732.jpg" alt="Margherita Pizza">
+                    <h3>Margherita Pizza</h3>
+                    <p>Price: $10</p>
+                    <p>Rating: ★★★★★</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="idaly-sambhar.jpg" alt="Caesar Salad">
+                    <h3>Caesar Salad</h3>
+                    <p>Price: $8</p>
+                    <p>Rating: ★★★☆☆</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="India food pic.jpg" alt="Grilled Salmon">
+                    <h3>Grilled Salmon</h3>
+                    <p>Price: $15</p>
+                    <p>Rating: ★★★★★</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="Quick-trick_chick-tacos.jpg" alt="Chocolate Lava Cake">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Price: $6</p>
+                    <h4>“Wrap your taste buds around this delightful paneer spring roll—perfectly crispy and
+                        oh-so-delicious! 🌱🥢”</h4>
+                    <p>Rating: ★★★★☆</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="18ffefuk;hgiyf.jpg" alt="Pasta Primavera">
+                    <h3>Pasta Primavera</h3>
+                    <p>Price: $19</p>
+                    <p>Rating: ★★★★☆</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="RESTAURANT_STYLE_SOUTH_INDIAN_THALI_original.jpg" alt="Grilled Salmon">
+                    <h3>Grilled Salmon</h3>
+                    <p>Price: $17</p>
+                    <p>Rating: ★★★★★</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="1317096 samosa.webp" alt="Pasta Primavera">
+                    <h3>Samosa</h3>
+                    <h4>“Snack time made better! Who can resist a delicious samosa? 😍</h4>
+                    <p>Price: $19</p>
+                    <p>Rating: ★★★★☆</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="customer-reviews">
+            <h2>What Our Customers Say</h2>
+            <div class="review-item">
+                <p>"Absolutely delightful! Every dish was a masterpiece!"</p>
+                <cite>- Emma R.</cite>
+            </div>
+            <div class="review-item">
+                <p>"Great atmosphere and even better food! Will come again."</p>
+                <cite>- Lucas P.</cite>
+            </div>
+        </section>
+
+        <section class="reservation">
+            <h2>Make a Reservation</h2>
+            <div class="reservation-card">
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="date">Reservation Date:</label>
+                    <input type="date" id="date" required>
+
+                    <label for="time">Reservation Time:</label>
+                    <input type="time" id="time" required>
+
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" min="1" required>
+
+                    <button type="submit">Reserve Now</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="specials">
+            <h2>Today's Specials</h2>
+            <div class="special-item">
+                <h3>Palak Paneer</h3>
+                <h4>Spinach curry with cubes of paneer.</h4>
+                <p>Price: $22</p>
+                <p>Enjoy a perfect blend of steak and shrimp with garlic butter.</p>
+            </div>
+            <div class="special-item">
+                <h3>Chole Bhature </h3>
+                <h4> Spicy chickpeas served with deep-fried bread.</h4>
+                <p>Price: $14</p>
+                <p>A nutritious bowl filled with quinoa, veggies, and a tahini dressing.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+        <p>123 Culinary St, Food City, FC 12345</p>
+        <p>Phone: (123) 456-7890 | Email: info@ourrestaurant.com</p>
+    </footer>
+</body>
+
+</html>

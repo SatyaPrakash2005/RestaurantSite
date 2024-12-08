@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Our Restaurant</title>
+  
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #e1e1e1);
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background: #2980b9;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #3498db;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 25px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+    font-size: 2.8em;
+    color: #2980b9;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.events, .testimonials {
+    padding: 40px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.events h2, .testimonials h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #2980b9;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.event-item, .testimonial-item {
+    background: #fff;
+    border-radius: 8px;
+    margin: 15px auto;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    transition: transform 0.3s;
+}
+
+.event-item:hover, .testimonial-item:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .gallery h2, .events h2, .testimonials h2 {
+        font-size: 2em;
+    }
+    
+    .event-item, .testimonial-item {
+        padding: 15px;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <h2>Our Delicious Dishes</h2>
+            <div class="gallery-grid">
+                <img src="maxresdefault.jpg" alt="Dish 1">
+                <img src="1317096 samosa.webp" alt="Dish 2">
+                <img src="idaly-sambhar.jpg" alt="Dish 3">
+                <img src="india-food-paratha-1120x732.jpg" alt="Dish 4">
+                <img src="pani-puri.jpg" alt="Dish 5 ">
+                <img src="Vegetarian-dishes-foodiewish.jpg" alt="Dish 7">
+                <img src="sweats.jpeg" alt="Dish 9">
+                <img src="India food pic.jpg" alt="Dish 10">
+               
+            </div>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div class="event-item">
+                <h3>Family-Night</h3>
+                <p>Date: October 15, 2024</p>
+                <p>Join us for an evening of fine coaldrinks and delicious food.</p>
+            </div>
+            <div class="event-item">
+                <h3>Live Music Fridays</h3>
+                <p>Date: Every Friday</p>
+                <p>Enjoy live music performances while you dine.</p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-item">
+                <p>"The ambiance is fantastic, and the food is even better!"</p>
+                <cite>- Aditya </cite>
+            </div>
+            <div class="testimonial-item">
+                <p>"A delightful experience from start to finish!"</p>
+                <cite>- Arun Kumar</cite>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+        <p>123 Culinary St, Food City, FC 12345</p>
+        <p>Phone: (123) 456-7890 | Email: info@ourrestaurant.com</p>
+    </footer>
+</body>
+</html>

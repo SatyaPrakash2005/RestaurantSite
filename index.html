@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home - Our Restaurant</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #e1e1e1);
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #34495e;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: url('osqyc0qv.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+    animation: slideIn 1s ease forwards;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    animation: slideIn 1.5s ease forwards;
+}
+
+.hero button {
+    padding: 12px 24px;
+    background: #ffcc00;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+}
+
+.features, .special-offers, .testimonials, .gallery-preview {
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.features h2, .special-offers h2, .testimonials h2, .gallery-preview h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 2.5em;
+}
+
+.feature-item, .offer-item, .testimonial-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.feature-item:hover, .offer-item:hover, .testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery-images img {
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    max-width: 100%; /* Ensures the image doesn't exceed the container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Adjust this value as needed */
+}
+
+
+.gallery-images img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-info {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffd700;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Delicious Food Awaits You!</h2>
+            <p>Experience the best culinary delights with us.</p>
+            <button onclick="window.location.href='menu.html'">View Menu</button>
+
+        </section>
+
+        <section class="features">
+            <h2>Our Features</h2>
+            <div class="feature-item">
+                <h3>Fresh Ingredients</h3>
+                <p>We source the freshest ingredients to create mouth-watering dishes.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Expert Chefs</h3>
+                <p>Our chefs are trained professionals with years of culinary experience.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Cozy Ambiance</h3>
+                <p>Enjoy your meal in a warm and inviting atmosphere.</p>
+            </div>
+        </section>
+
+        <section class="special-offers">
+            <h2>Special Offers</h2>
+            <div class="offer-item">
+                <h3>Happy Hour</h3>
+                <p>Join us for happy hour from 5 PM to 7 PM for discounted drinks!</p>
+            </div>
+            <div class="offer-item">
+                <h3>Family Meal Deals</h3>
+                <p>Special family meal packages available every weekend!</p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-item">
+                <p>"The best restaurant experience I've ever had! Highly recommend!"</p>
+                <cite>- Aditya </cite>
+            </div>
+            <div class="testimonial-item">
+                <p>"Amazing food and friendly staff. I can't wait to come back!"</p>
+                <cite>- Prakash</cite>
+            </div>
+        </section>
+
+        <section class="gallery-preview">
+            <h2>Gallery Preview</h2>
+            <div class="gallery-images">
+                <img src="idaly-sambhar.jpg" alt="Dish 1 idaly-sambhar">
+                <img src="dhokla.jpg" alt="Dish 2 Dhokla">
+                <img src="india-food-paratha-1120x732.jpg" alt="Dish 3 Paratha">
+                <img src="India food pic.jpg" alt="Dish 4">
+            </div>
+            <button onclick="window.location.href='gallery.html'">View Full Gallery</button>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+            <p>123 Culinary St, Food City, FC 12345</p>
+            <p>Phone: (123) 456-7890 | Email: info@ourrestaurant.com</p>
+        </div>
+        <div class="footer-links">
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact</a> |
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+    <script>
+        // Add any necessary JavaScript here
+    </script>
+</body>
+</html>

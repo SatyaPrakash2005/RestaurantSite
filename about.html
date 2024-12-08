@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Our Restaurant</title>
+
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: #333;
+    background: linear-gradient(to bottom, #f0f0f0, #e1e1e1);
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in;
+}
+
+.about-story,
+.owner {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.owner-info {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.owner-info:hover {
+    transform: translateY(-5px);
+}
+
+.owner-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .owner-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .owner-photo {
+        margin: 0 0 20px 0;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-story">
+            <h2>Our Story</h2>
+            <p>Welcome to Our Restaurant, where every dish tells a story. Founded by our family with a passion for authentic cuisine, we believe in serving food made with love and the freshest ingredients. Our menu is a celebration of flavors, from traditional recipes passed down through generations to innovative dishes that surprise and delight.</p>
+            <p>We are dedicated to creating a warm and inviting atmosphere where everyone feels like family. Join us for a memorable dining experience that connects you to the heart of our culinary heritage.</p>
+        </section>
+
+        <section class="owner">
+            <h2>Meet the Owner</h2>
+            <div class="owner-info">
+                <img src="WhatsApp Image 2024-05-02 at 3.53.45 AM (1).jpeg" alt="Owner's Picture" class="owner-photo">
+                <div>
+                    <h3>MR. XYZ</h3>
+                    <p>MR. XYZ is the heart and soul of Our Restaurant. With over 15 years of experience in the culinary world, he brings a unique blend of traditional techniques and contemporary flair to the kitchen. His passion for food and commitment to quality has made the restaurant a beloved spot in the community.</p>
+                    <p>He believes that cooking is not just about preparing meals but about creating unforgettable experiences for guests. His dedication to customer satisfaction is unmatched, ensuring that every visit feels special.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p style="text-align: center;">&copy; 2024 Our Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
